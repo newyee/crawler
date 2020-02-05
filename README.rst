@@ -1,10 +1,10 @@
 Beautifulsoupなどでクローリングする際、サーバーに負荷をかけないよう一度アクセスしたページをキャッシュし、
-```requests_cache.install_cache```に指定した時間、ローカルに保存したURLを介してアクセスを行う。
+ `` requests_cache.install_cache `` に指定した時間、ローカルに保存したURLを介してアクセスを行う。
 
 SAMPLE
 ========================
 
-```
+```python
 from response.crawler import get_response
 import requests
 import datetime
@@ -17,5 +17,4 @@ target_url = 'test.co.jp'
 requests_cache.install_cache(cache_name='test_cache', backend='sqlite', expire_after=60*120)
 soup = BeautifulSoup(get_response(targetURL).content,'lxml')
 print(soup)
-
 ```
