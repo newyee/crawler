@@ -9,6 +9,7 @@ def read_requirements():
     return requirements
 
 setup(
+    packages=['get_response'],
     name='get_response',
     version='0.0.1',
     description='get response for Crawling',
