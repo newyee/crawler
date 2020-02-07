@@ -6,6 +6,7 @@ SAMPLE
 ::
 
   from response.crawler import get_response
+  from bs4 import BeautifulSoup
   import requests
   import datetime
   import cchardet
