@@ -1,5 +1,7 @@
 README.rst
 setup.py
+get_response/__init__.py
+get_response/crawler.py
 get_response.egg-info/PKG-INFO
 get_response.egg-info/SOURCES.txt
 get_response.egg-info/dependency_links.txt
